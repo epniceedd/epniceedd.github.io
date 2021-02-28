@@ -83,12 +83,12 @@ $(document).on("click",".ip4",()=>{
 	copy.style.top = "0";
 	copy.setAttribute("id", "ta");
 	document.body.appendChild(copy);
-	copy.textContent = v;
+	copy.textContent = g;
 	copy.select();
 	document.execCommand("copy");
 	$(".ip4").html("<span class='extrapad'>site copied!</span>");
 	setTimeout(function(){
-		$(".ip4").html(v);
+		$(".ip4").html(g);
 		var copy = document.getElementById("ta");
 		copy.parentNode.removeChild(copy);
 	},1000);
